@@ -19,7 +19,7 @@ if st.button("에너지 절감 진단 및 코칭 받기"):
             # 간단한 절감액 계산 로직 (예시)
             estimated_savings = monthly_bill * 0.15
             
-            st.success(예상 절감 금액: 약 {int(estimated_savings):,}원 / 월)
+            st.success(f"예상 절감 금액: 약 {int(estimated_savings):,}원 / 월")
             
             # OpenAI API를 이용한 LLM 코칭
             prompt = f"업종이 {business_type}이고 월 전기요금이 {monthly_bill:,}원인 소상공인에게 실질적인 에너지 절감 팁 3가지를 친절하게 코칭해줘."
